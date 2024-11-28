@@ -2,6 +2,9 @@ require("dotenv").config();
 const express = require("express"); // import du package express
 const app = express(); // création du serveur
 const axios = require("axios");
+const cors = require("cors");
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   try {
