@@ -90,7 +90,8 @@ app.all("*", (req, res) => {
   return res.status(404).json("Not found");
 });
 
-app.listen(3000, () => {
+const PORT = 3000;
+app.listen(process.env.PORT || PORT, () => {
   // Mon serveur va écouter le port 3000
   console.log("Server has started 🦸‍♂️"); // Quand je vais lancer ce serveur, la callback va être appelée
 });
