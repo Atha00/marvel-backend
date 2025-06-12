@@ -15,6 +15,7 @@ const app = express();
 // 7 : ajouter le script "start" dans package.json pour démarrer le serveur sur NorthFlank
 // 8 : remplacer le PORT du server
 // 9 : accomplir la procédure github pour envoyer le code sur la plateforme GitHub !
+// 10 : ligne ajoutée pour que notre ami NorthFlank (AVEUGLE_MAN) détecte bien le changement dans le projet !!
 
 // permet de lire les paramètres body :
 app.use(express.json());
