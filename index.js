@@ -1,8 +1,11 @@
 require("dotenv").config();
-
+// NE PAS OUBLIER (pas comme moi) d'utiliser cors :
+const cors = require("cors");
 const express = require("express");
 const axios = require("axios");
 const app = express();
+// permet de contacter le back depuis le front :
+app.use(cors());
 
 // console.log(process.env.MARVEL_API_KEY); // OK
 // etapes à suivre pour le déploiement :
